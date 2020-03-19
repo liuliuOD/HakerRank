@@ -7,6 +7,7 @@ use Algorithms\LilysHomework;
 class LilysHomeworkTest extends \PHPUnit\Framework\TestCase
 {
     /**
+     * @test
      * @dataProvider testDataProvider
      */
     public function testDemo($array, $expected)
