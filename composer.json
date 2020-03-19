@@ -1,0 +1,7 @@
+{
+    "name": "liuliu/HackerRank",
+    "description": "Practice",
+    "require" : {
+        "phpunit/phpunit": "~9.0"
+    }
+}
