@@ -2,7 +2,7 @@
 <phpunit colors="true">
     <testsuites>
         <testsuite name="Hacker Rank">
-            <directory>test</directory>
+            <directory>Tests</directory>
         </testsuite>
     </testsuites>
 </phpunit>
