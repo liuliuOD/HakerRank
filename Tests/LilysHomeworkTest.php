@@ -19,6 +19,9 @@ class LilysHomeworkTest extends \PHPUnit\Framework\TestCase
         $this->assertEquals($expected, $demo);
     }
 
+    /**
+     * @doesNotPerformAssertions
+     */
     public function testDataProvider()
     {
         return [
