@@ -9,13 +9,13 @@ class LilysHomeworkTest extends \PHPUnit\Framework\TestCase
     /**
      * @dataProvider testDataProvider
      */
-    public function testDemo()
+    public function testDemo($array, $expected)
     {
         $lilysHomework = new LilysHomework();
 
-        $demo = $lilysHomework->demo();
+        $demo = $lilysHomework->demo($array);
 
-        $this->assertEquals(3, $demo);
+        $this->assertEquals($expected, $demo);
     }
 
     public function testDataProvider()
