@@ -30,7 +30,7 @@ class LilysHomework
      * @param array $sortedArr
      * @return int
      */
-    public function $this->lilysHomeworkAlgorithm($originArr, $sortedArr)
+    public function lilysHomeworkAlgorithm($originArr, $sortedArr)
     {
         $swapTimes = 0;
 
