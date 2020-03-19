@@ -61,6 +61,6 @@ class LilysHomework
 
         $minimumSwapTimes = $this->lilysHomework($array);
 
-        echo "Minimum Swap Times : " . $minimumSwapTimes;
+        return $minimumSwapTimes;
     }
 }
