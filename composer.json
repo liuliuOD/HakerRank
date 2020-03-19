@@ -1,5 +1,5 @@
 {
-    "name": "liuliu/HackerRank",
+    "name": "liuliu/hacker-rank",
     "description": "Practice",
     "require" : {
         "phpunit/phpunit": "~9.0"
