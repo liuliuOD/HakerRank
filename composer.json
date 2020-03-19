@@ -1,7 +1,15 @@
 {
     "name": "liuliu/hacker-rank",
+    
     "description": "Practice",
+    
     "require" : {
         "phpunit/phpunit": "~9.0"
+    },
+
+    "autoload": {
+        "psr-4": {
+            "Algorithms\\": "Algorithms"
+        }
     }
 }
