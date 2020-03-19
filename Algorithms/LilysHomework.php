@@ -55,10 +55,8 @@ class LilysHomework
     /**
      * 
      */
-    function demo()
+    function demo($array)
     {
-        $array = [3, 4, 6, 1, 2];
-
         $minimumSwapTimes = $this->lilysHomework($array);
 
         return $minimumSwapTimes;
