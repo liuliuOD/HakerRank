@@ -1,61 +1,66 @@
 <?php
 
-/**
- * 
- * 
- * @param array $arr
- * @return int
- */
-function lilysHomework($arr)
+namespace Algorithms;
+
+class LilysHomework
 {
-    $sortedArr = $arr;
-
-    sort($sortedArr);
-    $asc = lilysHomeworkAlgorithm($arr, $sortedArr);
-
-    rsort($sortedArr);
-    $desc = lilysHomeworkAlgorithm($arr, $sortedArr);
-
-    return min($asc, $desc);
-}
-
-/**
- * 
- * 
- * @param array $originArr
- * @param array $sortedArr
- * @return int
- */
-function lilysHomeworkAlgorithm($originArr, $sortedArr)
-{
-    $swapTimes = 0;
-
-    foreach($sortedArr as $key => $value)
+    /**
+     * 
+     * 
+     * @param array $arr
+     * @return int
+     */
+    public function lilysHomework($arr)
     {
-        $sortedMap[$value] = $key;
+        $sortedArr = $arr;
+
+        sort($sortedArr);
+        $asc = $this->lilysHomeworkAlgorithm($arr, $sortedArr);
+
+        rsort($sortedArr);
+        $desc = $this->lilysHomeworkAlgorithm($arr, $sortedArr);
+
+        return min($asc, $desc);
     }
 
-    for ($i = 0; $i < count($originArr); $i ++)
+    /**
+     * 
+     * 
+     * @param array $originArr
+     * @param array $sortedArr
+     * @return int
+     */
+    public function $this->lilysHomeworkAlgorithm($originArr, $sortedArr)
     {
-        if ($originArr[$i] !== $sortedArr[$i]) {
-            $swapTimes++;
+        $swapTimes = 0;
 
-            $sortedMap[$sortedArr[$i]] = $sortedMap[$originArr[$i]];
-            list($sortedArr[$i], $sortedArr[$sortedMap[$originArr[$i]]]) = array($sortedArr[$sortedMap[$originArr[$i]]], $sortedArr[$i]);
+        foreach($sortedArr as $key => $value)
+        {
+            $sortedMap[$value] = $key;
         }
+
+        for ($i = 0; $i < count($originArr); $i ++)
+        {
+            if ($originArr[$i] !== $sortedArr[$i]) {
+                $swapTimes++;
+
+                $sortedMap[$sortedArr[$i]] = $sortedMap[$originArr[$i]];
+                list($sortedArr[$i], $sortedArr[$sortedMap[$originArr[$i]]]) = array($sortedArr[$sortedMap[$originArr[$i]]], $sortedArr[$i]);
+            }
+        }
+
+        return $swapTimes;
     }
 
-    return $swapTimes;
-}
+    /**
+     * 
+     */
+    function demo()
+    {
+        $array = [3, 4, 6, 1, 2];
 
-/**
- * 
- */
-function demo()
-{
-    $array = [3, 4, 6, 1, 2];
+        $minimumSwapTimes = $this->lilysHomework($array);
 
-    $minimumSwapTimes = lilysHomework($array);
-
-    echo "Minimum Swap Times : " . $minimumSwapTimes;
+        echo "Minimum Swap Times : " . $minimumSwapTimes;
+    }
 }
