@@ -3,8 +3,9 @@ language: php
 php:
   - 7.3
 
-install:
-    - composer install --no-interaction
+install: 
+  - composer install --no-interaction --quiet
 
 script:
+  - composer dump
   - ./vendor/bin/phpunit -c phpunit.xml
