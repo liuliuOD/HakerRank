@@ -5,7 +5,7 @@ namespace Algorithms;
 class LilysHomework
 {
     /**
-     * 
+     * select the minimize swap times between ACS and DESC
      * 
      * @param array $arr
      * @return int
@@ -15,16 +15,16 @@ class LilysHomework
         $sortedArr = $arr;
 
         sort($sortedArr);
-        $asc = $this->lilysHomeworkAlgorithm($arr, $sortedArr);
+        $ascSwapTimes = $this->lilysHomeworkAlgorithm($arr, $sortedArr);
 
         rsort($sortedArr);
-        $desc = $this->lilysHomeworkAlgorithm($arr, $sortedArr);
+        $descSwapTimes = $this->lilysHomeworkAlgorithm($arr, $sortedArr);
 
-        return min($asc, $desc);
+        return min($ascSwapTimes, $descSwapTimes);
     }
 
     /**
-     * 
+     * calculate swap times
      * 
      * @param array $originArr
      * @param array $sortedArr
@@ -42,7 +42,7 @@ class LilysHomework
         for ($i = 0; $i < count($originArr); $i ++)
         {
             if ($originArr[$i] !== $sortedArr[$i]) {
-                $swapTimes++;
+                $swapTimes ++;
 
                 $sortedMap[$sortedArr[$i]] = $sortedMap[$originArr[$i]];
                 list($sortedArr[$i], $sortedArr[$sortedMap[$originArr[$i]]]) = array($sortedArr[$sortedMap[$originArr[$i]]], $sortedArr[$i]);
@@ -50,15 +50,5 @@ class LilysHomework
         }
 
         return $swapTimes;
-    }
-
-    /**
-     * 
-     */
-    function demo($array)
-    {
-        $minimumSwapTimes = $this->lilysHomework($array);
-
-        return $minimumSwapTimes;
     }
 }
