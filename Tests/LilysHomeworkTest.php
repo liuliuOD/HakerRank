@@ -14,17 +14,18 @@ class LilysHomeworkTest extends \PHPUnit\Framework\TestCase
         $lilysHomework = new LilysHomework();
 
         $this->assertInstanceOf(LilysHomework::class, $lilysHomework);
+
+        return $lilysHomework;
     }
 
     /**
      * @test
      * @dataProvider testHomeworkProvider
+     * @depends testInstance
      */
-    public function testLilysHomework($array, $expected)
+    public function testLilysHomework($array, $expected, $instance)
     {
-        $lilysHomework = new LilysHomework();
-
-        $lilysHomework = $lilysHomework->lilysHomework($array);
+        $lilysHomework = $instance->lilysHomework($array);
 
         $this->assertEquals($expected, $lilysHomework);
     }
@@ -32,14 +33,14 @@ class LilysHomeworkTest extends \PHPUnit\Framework\TestCase
     /**
      * @test
      * @dataProvider testAlgorithmProvider
+     * @depends testInstance
      */
-    public function testLilysHomeworkAlgorithm($array, $expectedAsc, $expectedDesc)
+    public function testLilysHomeworkAlgorithm($array, $expectedAsc, $expectedDesc, $instance)
     {
-        $lilysHomework = new LilysHomework();
         $sortedArr = $array;
 
-        $asc = $lilysHomework->lilysHomeworkAlgorithm($array, sort($sortedArr));
-        $desc = $lilysHomework->lilysHomeworkAlgorithm($array, rsort($sortedArr));
+        $asc = $instance->lilysHomeworkAlgorithm($array, sort($sortedArr));
+        $desc = $instance->lilysHomeworkAlgorithm($array, rsort($sortedArr));
 
         $this->assertEquals(
             [$expectedAsc, $expectedDesc],
