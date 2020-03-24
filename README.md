@@ -4,7 +4,7 @@ HakerRank Record
 ===
 This project will be used to store my solved problem in [HakerRank](https://www.hackerrank.com).
 ---
-Use [Travis-CI](https://travis-ci.org) to run my test automatically.
+Use [Travis-CI](https://travis-ci.org) to run test automatically.
 
 - algorithm
     - [Lily's homework.](./READMEs/LilysHomework.md)

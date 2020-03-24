@@ -10,7 +10,7 @@ class LilysHomework
      * @param array $arr
      * @return int
      */
-    public function lilysHomework($arr)
+    public function resolvedLilysHomework($arr)
     {
         $sortedArr = $arr;
 

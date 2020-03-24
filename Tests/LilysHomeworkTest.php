@@ -25,7 +25,7 @@ class LilysHomeworkTest extends \PHPUnit\Framework\TestCase
      */
     public function testLilysHomework($array, $expected, $instance)
     {
-        $lilysHomework = $instance->lilysHomework($array);
+        $lilysHomework = $instance->resolvedLilysHomework($array);
 
         $this->assertEquals($expected, $lilysHomework);
     }
