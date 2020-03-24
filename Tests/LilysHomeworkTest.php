@@ -39,8 +39,11 @@ class LilysHomeworkTest extends \PHPUnit\Framework\TestCase
     {
         $sortedArr = $array;
 
-        $asc = $instance->lilysHomeworkAlgorithm($array, sort($sortedArr));
-        $desc = $instance->lilysHomeworkAlgorithm($array, rsort($sortedArr));
+        sort($sortedArr);
+        $asc = $instance->lilysHomeworkAlgorithm($array, $sortedArr);
+
+        rsort($sortedArr);
+        $desc = $instance->lilysHomeworkAlgorithm($array, $sortedArr);
 
         $this->assertEquals(
             [$expectedAsc, $expectedDesc],
