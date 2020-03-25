@@ -1,7 +1,7 @@
 LilysHomework
 ===
-- Question
+- **Question**
     You can check question [here](https://www.hackerrank.com/challenges/lilys-homework/problem).
 
-- Code
-    [Here](../Algorithms/LilysHomework/LilysHomework.php).
+- **Code**
+    Find code [here](../Algorithms/LilysHomework/LilysHomework.php).
