@@ -1,5 +1,4 @@
-[![Build Status](https://travis-ci.org/liuliuOD/HakerRank.svg?branch=master)](https://travis-ci.org/liuliuOD/HakerRank)
-
+[![Build Status](https://travis-ci.org/liuliuOD/HakerRank.svg?branch=master)](https://travis-ci.org/liuliuOD/HakerRank) [![Coverage Status](https://coveralls.io/repos/github/liuliuOD/HakerRank/badge.svg?branch=master)](https://coveralls.io/github/liuliuOD/HakerRank?branch=master)  
 HakerRank Record
 ===
 This project will be used to store my solved problem in [HakerRank](https://www.hackerrank.com).
