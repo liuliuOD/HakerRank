@@ -2,7 +2,7 @@
 
 namespace Tests;
 
-use Algorithms\LilysHomework;
+use Algorithms\LilysHomework\LilysHomework;
 
 class LilysHomeworkTest extends \PHPUnit\Framework\TestCase
 {
