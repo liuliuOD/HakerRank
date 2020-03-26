@@ -4,7 +4,6 @@ php:
   - 7.3
 
 before_script:
-  - ./vendor/bin/php-coveralls -h
   - mkdir -p coverage-clover/logs
   - phpenv config-rm xdebug.ini
 
@@ -14,8 +13,6 @@ install:
 script:
   - composer dump
   - phpdbg -qrr -d memory_limit=-1 ./vendor/bin/phpunit -c phpunit.xml
-  # - phpdbg -qrr -d memory_limit=-1 ./vendor/bin/phpunit --coverage-clover coverage-clover/logs/clover.xml
-  - ls -al coverage-clover/logs
 
 after_success:
   - ./vendor/bin/php-coveralls -v
