@@ -6,5 +6,5 @@ This project will be used to store my solved problem in [HakerRank](https://www.
 ---
 Use [Travis-CI](https://travis-ci.org) to run test automatically.
 
-- algorithm
+- Algorithms
     - [Lily's homework.](./READMEs/LilysHomework.md)
