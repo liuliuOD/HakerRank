@@ -10,7 +10,7 @@
     </logging>
     <filter>
         <whitelist processUncoveredFilesFromWhitelist="true">
-            <directory suffix=".php">Algorithms</directory>
+            <directory suffix=".php">Resolved</directory>
         </whitelist>
     </filter>
 </phpunit>

@@ -1,6 +1,6 @@
 <?php
 
-namespace Algorithms\LilysHomework;
+namespace Resolved\Algorithms\LilysHomework;
 
 class LilysHomework
 {

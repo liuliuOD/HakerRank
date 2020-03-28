@@ -1,8 +1,8 @@
 <?php
 
-namespace Tests;
+namespace Tests\Algorithms;
 
-use Algorithms\LilysHomework\LilysHomework;
+use \Resolved\Algorithms\LilysHomework\LilysHomework;
 
 class LilysHomeworkTest extends \PHPUnit\Framework\TestCase
 {
